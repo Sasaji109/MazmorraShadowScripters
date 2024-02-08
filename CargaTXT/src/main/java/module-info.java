@@ -1,0 +1,3 @@
+module CargaTXT {
+    requires game;
+}

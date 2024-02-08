@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ec7f7dd-b775-44f3-a8a9-2073dcf03c68" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05f4c7e4912280acd2a71a4a0ec835fb4fb39022" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d162865c5e14fca803f806ff8b3295b86e614d7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e2ac7d6c6069b840ffe5951cfd3aa2c91595e04" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/3256eb491986d502388cf204c4a02d5f7f593880" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/3343e83d322ff2ea6c12261af8d404a12284d8b1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/445523c471a406da7ebc991e45ba2c21347f14c9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/44c71ade1c07e580db9a00df9ba63a8c28b6c1a6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/450d4e905e9b7d8e0ad8fea00a63711acf63da40" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6c1072ff9b63bc93982330afc9ad3f2ed52a168a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/3/7314252b71d2c4ed4b6a4e8ac226fc8d4c21bdf5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/86bbf41ca4d62c1d023b25c215c1ba5d6149e2b7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/9723931f3dbbe707c698a4816c6c360b9ce774ba" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a80dc0ac58e05963aa3729f0373697c27864a404" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c642685127cca8eb925cdc52f53bfb13e064f85f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d897522476b03161e8724ff3de73ba1f1500a260" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e50e05d8eb51e50a9736efbeaff04b76b945b6f8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/5/05f4c7e4912280acd2a71a4a0ec835fb4fb39022" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/d/1d162865c5e14fca803f806ff8b3295b86e614d7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/e/2e2ac7d6c6069b840ffe5951cfd3aa2c91595e04" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/2/3256eb491986d502388cf204c4a02d5f7f593880" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/3/3343e83d322ff2ea6c12261af8d404a12284d8b1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/445523c471a406da7ebc991e45ba2c21347f14c9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/44c71ade1c07e580db9a00df9ba63a8c28b6c1a6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/5/450d4e905e9b7d8e0ad8fea00a63711acf63da40" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/c/6c1072ff9b63bc93982330afc9ad3f2ed52a168a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/3/7314252b71d2c4ed4b6a4e8ac226fc8d4c21bdf5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/6/86bbf41ca4d62c1d023b25c215c1ba5d6149e2b7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/7/9723931f3dbbe707c698a4816c6c360b9ce774ba" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/8/a80dc0ac58e05963aa3729f0373697c27864a404" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/6/c642685127cca8eb925cdc52f53bfb13e064f85f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/8/d897522476b03161e8724ff3de73ba1f1500a260" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/5/e50e05d8eb51e50a9736efbeaff04b76b945b6f8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CargaTXT/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CargaTXT/src/main/java/LoadTXT/LoadTXT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CargaTXT/src/main/java/LoadTXT/loadTXTImpl/LoadTXTImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CargaTXT/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CargaXML/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CargaXML/src/main/java/load/LoadXml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CargaXML/src/main/java/load/loadImpl/LoadXMLImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Console/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Console/src/main/java/WizardNightmare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Console/src/main/java/console/Console.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Console/src/main/java/console/ConsoleContainerManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Console/src/main/java/console/ConsoleDungeonManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Console/src/main/java/console/ConsoleHomeManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Console/src/main/java/loaderManual/DungeonLoaderManual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Console/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/gui/Constantes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/gui/main/DIJavafx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/gui/main/FXMLLoaderProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/gui/main/MainFX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/gui/main/StartupScene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/gui/pantallas/common/BasePantallaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/gui/pantallas/common/Pantallas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/gui/pantallas/inicio/InicioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/gui/pantallas/principal/MenuJuegoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/gui/pantallas/principal/PrincipalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/resources/META-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/resources/fxml/inicio.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/resources/fxml/menuJuego.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/resources/fxml/principal.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/resources/images/backgroundMazmorra.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/resources/images/backgroundMazmorra.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/resources/images/dungeonLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI/src/main/resources/images/fondoMenu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/Domain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/DungeonLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/Interactive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/actions/Attack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/actions/Cast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/actions/PhysicalAttack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/character/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/character/Creature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/character/Wizard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/character/exceptions/CharacterKilledException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/character/exceptions/WizardLifeOverMaxException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/character/exceptions/WizardNoWeaponException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/character/exceptions/WizardNotEnoughEnergyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/character/exceptions/WizardObjectOcupiedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/character/exceptions/WizardSpellKnownException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/character/exceptions/WizardTiredException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/conditions/Condition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/conditions/FindCreatureCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/conditions/FindObjectCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/conditions/KillAllCreaturesCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/conditions/SimpleCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/conditions/VisitAllRooms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/conditions/VisitAllRoomsCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/demiurge/Demiurge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/demiurge/DemiurgeContainerManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/demiurge/DemiurgeDungeonManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/demiurge/DemiurgeEndChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/demiurge/DemiurgeHomeManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/demiurge/DungeonConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/demiurge/EndChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/demiurge/exceptions/EndGameException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/demiurge/exceptions/ExitException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/demiurge/exceptions/GoDungeonException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/demiurge/exceptions/GoHomekException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/demiurge/exceptions/GoSleepException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/dungeon/Door.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/dungeon/Dungeon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/dungeon/Home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/dungeon/HomeNotEnoughSingaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/dungeon/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/dungeon/RoomCrystalEmptyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/dungeon/Site.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/object/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/object/ItemCreationErrorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/object/Necklace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/object/Ring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/object/SingaCrystal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/object/SingaStone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/object/Weapon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/objectContainer/Chest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/objectContainer/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/objectContainer/ContainerSinga.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/objectContainer/CrystalCarrier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/objectContainer/CrystalFarm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/objectContainer/JewelryBag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/objectContainer/RoomSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/objectContainer/Wearables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/objectContainer/exceptions/ContainerEmptyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/objectContainer/exceptions/ContainerErrorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/objectContainer/exceptions/ContainerFullException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/objectContainer/exceptions/ContainerInvalidExchangeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/objectContainer/exceptions/ContainerUnacceptedItemException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/spell/AirAttack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/spell/DrainEnergy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/spell/ElectricAttack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/spell/FireAttack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/spell/Jump.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/spell/Recover.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/spell/Spell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/spell/SpellUnknowableException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/spellContainer/Knowledge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/spellContainer/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/spellContainer/Memory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/util/Value.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/util/ValueOverMaxException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/game/util/ValueUnderMinException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Informes/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Informes/src/main/java/informes/InformesMazmorra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Informes/src/main/java/informes/impl/InformesMazmorraImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Informes/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Informes/src/main/resources/reports/AccionesReport.jrxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Informes/src/main/resources/reports/PersonajeReport.jrxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Informes/src/main/resources/reports/RepCeldasVisitadas.jrxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Informes/src/main/resources/xml/acciones.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Informes/src/main/resources/xml/celdasVisitadas.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Informes/src/main/resources/xml/personaje.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Informes/src/main/resources/xml/result.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Save/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Save/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Save/src/main/java/saveTXT/SaveTXT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Save/src/main/java/saveTXT/saveTXTImpl/SaveTXTImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Save/src/main/java/saveXML/SaveXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Save/src/main/java/saveXML/saveXMLImpl/saveXMLImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2c57VP6bHjD5sKAK8wixLqfmT3q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17 (2)",
+    "last_opened_file_path": "C:/Users/madrid/IdeaProjects/Otros/MazmorraBase",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\madrid\IdeaProjects\Interfaces\MazmorraShadowScripters\Informes\src\main\java" />
+      <recent name="C:\Users\madrid\IdeaProjects\Interfaces\MazmorraShadowScripters\Save\src\main\java" />
+      <recent name="C:\Users\madrid\IdeaProjects\Interfaces\MazmorraShadowScripters\Informes\src\main\resources" />
+      <recent name="C:\Users\madrid\IdeaProjects\Interfaces\MazmorraShadowScripters\GUI\src\main\resources" />
+      <recent name="C:\Users\madrid\IdeaProjects\Interfaces\MazmorraShadowScripters\GUI\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DIJavafx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.main.DIJavafx" />
+      <module name="GUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DIJavafx" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ec7f7dd-b775-44f3-a8a9-2073dcf03c68" name="Changes" comment="" />
+      <created>1707389610913</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707389610913</updated>
+      <workItem from="1707389611990" duration="1404000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.pantallas.principal.PrincipalController">
+    <center>
+        <StackPane prefHeight="150.0" prefWidth="200.0">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="background" BorderPane.alignment="CENTER">
+                <children>
+                </children>
+            </AnchorPane>
+        </StackPane>
+    </center>
+    <top>
+        <MenuBar fx:id="menuPrincipal">
+            <menus>
+                <Menu fx:id="menuOpciones" mnemonicParsing="false" text="OPCIONES">
+                    <items>
+                        <MenuItem fx:id="menuItemSalirSinGuardar" mnemonicParsing="false" onAction="#menuClick" text="Salir sin Guardar"/>
+                        <MenuItem fx:id="menuItemGuardarYSalir" mnemonicParsing="false" onAction="#menuClick" text="Guardar y Salir"/>
+                        <MenuItem fx:id="menuItemGenerarInforme" mnemonicParsing="false" onAction="#menuClick" text="Generar Informe"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<historial>
+    <celda>
+        <id>3</id>
+        <description>sinogrsf</description>
+        <salida>false</salida>
+        <crystal_farm>2</crystal_farm>
+        <creature>ENERGY</creature>
+    </celda>
+    <celda>
+        <id>33</id>
+        <description>kjhgf</description>
+        <salida>false</salida>
+        <crystal_farm>2</crystal_farm>
+        <creature>AIR</creature>
+    </celda>
+    <celda>
+        <id>32</id>
+        <description>qqqq</description>
+        <salida>false</salida>
+        <crystal_farm>2</crystal_farm>
+    </celda>
+</historial>
