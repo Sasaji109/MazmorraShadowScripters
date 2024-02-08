@@ -9,7 +9,6 @@ import net.sf.jasperreports.engine.data.JRXmlDataSource;
 import net.sf.jasperreports.view.JasperViewer;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -127,7 +126,8 @@ public class InformesMazmorraImpl implements InformesMazmorra {
     }
 
     @Override
-    public void HojaPersonaje(Wizard personaje) {
+    public void HojaPersonaje(Wizard personaje) { /*
+
         try{
             //build doc
             DocumentBuilderFactory documentFactory = DocumentBuilderFactory.newInstance();
@@ -248,8 +248,9 @@ public class InformesMazmorraImpl implements InformesMazmorra {
 
         } catch (ParserConfigurationException | IOException | TransformerException e) {
             throw new RuntimeException(e);
-        }
+        } */
     }
+
     public void cargar(String datos, String modelo,String query){
         try {
             InputStream inputStream = InformesMazmorraImpl.class.getClassLoader().getResourceAsStream(datos);
