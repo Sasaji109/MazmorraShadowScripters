@@ -1,0 +1,10 @@
+
+E
+java:S37409"/Provide the parametrized type for this generic.(¾±ËÎ
+
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ñËÇ³8óˆé®Ü1
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÌØŞ¯
+T
+java:S5993"9Change the visibility of this constructor to "protected".(íŒÏğûÿÿÿÿ
+P
+java:S1161L":Add the "@Override" annotation above this method signature(Á»›ê

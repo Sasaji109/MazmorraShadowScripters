@@ -18,8 +18,11 @@
                 <Menu fx:id="menuOpciones" mnemonicParsing="false" text="OPCIONES">
                     <items>
                         <MenuItem fx:id="menuItemSalirSinGuardar" mnemonicParsing="false" onAction="#menuClick" text="Salir sin Guardar"/>
-                        <MenuItem fx:id="menuItemGuardarYSalir" mnemonicParsing="false" onAction="#menuClick" text="Guardar y Salir"/>
-                        <MenuItem fx:id="menuItemGenerarInforme" mnemonicParsing="false" onAction="#menuClick" text="Generar Informe"/>
+                        <MenuItem fx:id="menuItemGuardarYSalirXML" mnemonicParsing="false" onAction="#menuClick" text="Guardar y SalirXML"/>
+                        <MenuItem fx:id="menuItemGuardarYSalirTXT" mnemonicParsing="false" onAction="#menuClick" text="Guardar y SalirTXT"/>
+                        <MenuItem fx:id="menuItemGenerarInformeHistorialAcciones" mnemonicParsing="false" onAction="#menuClick" text="Generar Informe del Historial de Acciones"/>
+                        <MenuItem fx:id="menuItemGenerarInformeCeldasVisitadas" mnemonicParsing="false" onAction="#menuClick" text="Generar Informe de las Celdas Visitadas"/>
+                        <MenuItem fx:id="menuItemGenerarInformeHojaPersonaje" mnemonicParsing="false" onAction="#menuClick" text="Generar Informe de la Hoja de Personaje"/>
                     </items>
                 </Menu>
             </menus>

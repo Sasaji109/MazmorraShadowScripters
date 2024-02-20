@@ -12,6 +12,9 @@ module GUI {
     requires jakarta.inject;
     requires jakarta.cdi;
     requires game;
+    requires Save;
+    requires CargaTXT;
+    requires Informes;
 
     exports gui.main;
     exports gui.pantallas.principal;

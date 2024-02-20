@@ -1,0 +1,49 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Â”§†ûÿÿÿÿ
+t	java:S116 "ZRename this field "INITIAL_COMFORT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( êşÿÿÿÿ
+r	java:S116!"XRename this field "INITIAL_SINGA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â²¢óùÿÿÿÿ
+{	java:S116""aRename this field "INITIAL_SINGA_CAPACITY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üßˆ›üÿÿÿÿ
+{	java:S116#"aRename this field "INITIAL_CHEST_CAPACITY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´¸„Ãıÿÿÿÿ
+q	java:S116&"WRename this field "INITIAL_LIFE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡Â‰Éşÿÿÿÿ
+p	java:S116'"[Rename this field "INITIAL_LIFE_MAX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Úªò
+s	java:S116("YRename this field "INITIAL_ENERGY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äÍ®¦ÿÿÿÿÿ
+q	java:S116)"]Rename this field "INITIAL_ENERGY_MAX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€¬¼l
+…	java:S116*"kRename this field "INITIAL_CRYSTAL_CARRIER_CAPACITY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•˜¹şÿÿÿÿ
+|	java:S116+"gRename this field "INITIAL_CRYSTAL_BAG_CAPACITY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÒø¤
+s	java:S116,"^Rename this field "INITIAL_MAX_WEAPONS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾®íÓ
+z	java:S116-"`Rename this field "INITIAL_MAX_NECKLACES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’Ç«ùÿÿÿÿ
+v	java:S116."\Rename this field "INITIAL_MAX_RINGS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø³¥úÿÿÿÿ
+<
+java:S1170 "!Make this final field static too.( êşÿÿÿÿ
+<
+java:S1170!"!Make this final field static too.(Â²¢óùÿÿÿÿ
+<
+java:S1170""!Make this final field static too.(üßˆ›üÿÿÿÿ
+<
+java:S1170#"!Make this final field static too.(´¸„Ãıÿÿÿÿ
+<
+java:S1170&"!Make this final field static too.(¡Â‰Éşÿÿÿÿ
+7
+java:S1170'"!Make this final field static too.(Úªò
+<
+java:S1170("!Make this final field static too.(äÍ®¦ÿÿÿÿÿ
+6
+java:S1170)"!Make this final field static too.(€¬¼l
+<
+java:S1170*"!Make this final field static too.(•˜¹şÿÿÿÿ
+7
+java:S1170+"!Make this final field static too.(ñÒø¤
+7
+java:S1170,"!Make this final field static too.(¾®íÓ
+<
+java:S1170-"!Make this final field static too.(’Ç«ùÿÿÿÿ
+<
+java:S1170."!Make this final field static too.(ø³¥úÿÿÿÿ
+@	java:S1068"+Replace this use of System.out by a logger.(ŠÓñ³
+@	java:S106B"+Replace this use of System.out by a logger.(Éüƒ®
+@	java:S106G"+Replace this use of System.out by a logger.(œÎ½²
+E	java:S106U"+Replace this use of System.out by a logger.(ÉÕò¾ùÿÿÿÿ
+E	java:S106Z"+Replace this use of System.out by a logger.(æË­úÿÿÿÿ
+E	java:S106^"+Replace this use of System.out by a logger.(§ıÄúÿÿÿÿ
+E	java:S106j"+Replace this use of System.out by a logger.(•Ïò“ıÿÿÿÿ
+C	java:S108o")Either remove or fill this block of code.(ƒÁª½üÿÿÿÿ

@@ -8,6 +8,8 @@ import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class InicioController extends BasePantallaController {
 
     //COMPONENTES PANTALLA
@@ -19,7 +21,7 @@ public class InicioController extends BasePantallaController {
     private ImageView background;
 
     @FXML
-    private void seleccionarArchivoCargarPartida() {
+    private void seleccionarArchivoCargarPartida() throws IOException, ClassNotFoundException {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Seleccionar archivo de partida");
         fileChooser.getExtensionFilters().addAll(

@@ -1,0 +1,7 @@
+
+T
+java:S5993$"9Change the visibility of this constructor to "protected".(½¡½ıÿÿÿÿ
+D
+java:S1948")Make "attacks" transient or serializable.(Ø–ÑÌúÿÿÿÿ
+a
+java:S6201L"FReplace this instanceof check and cast with 'instanceof Attack attack'(¦‡š¼ùÿÿÿÿ

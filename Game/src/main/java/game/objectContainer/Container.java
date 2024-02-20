@@ -26,6 +26,10 @@ public abstract class Container extends Item  implements Serializable {
         items = new ArrayList<>();
     }
 
+    public ArrayList<Item> getItems() {
+        return items;
+    }
+
     /**
      *
      * @return number of items

@@ -24,6 +24,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+import javax.swing.JFrame;
 
 public class InformesMazmorraImpl implements InformesMazmorra {
     @Override
@@ -126,7 +127,7 @@ public class InformesMazmorraImpl implements InformesMazmorra {
     }
 
     @Override
-    public void HojaPersonaje(Wizard personaje) { /*
+    public void HojaPersonaje(Wizard personaje) {
 
         try{
             //build doc
@@ -248,7 +249,7 @@ public class InformesMazmorraImpl implements InformesMazmorra {
 
         } catch (ParserConfigurationException | IOException | TransformerException e) {
             throw new RuntimeException(e);
-        } */
+        }
     }
 
     public void cargar(String datos, String modelo,String query){
