@@ -140,4 +140,19 @@ public class Wizard extends Character {
                 + attacks.toString();
     }
 
+    public void setWearables(Wearables wearables) {
+        this.wearables.setWeapons(wearables.getWeapons());
+        this.wearables.setNecklaces(wearables.getNecklaces());
+        this.wearables.setRings(wearables.getRings());
+        this.wearables.setWeaponsMAX(wearables.getWeaponsMAX());
+        this.wearables.setNecklacesMAX(wearables.getNecklacesMAX());
+        this.wearables.setRingsMAX(wearables.getRingsMAX());
+    }
+
+    public void setCrystalCarrier(CrystalCarrier crystalCarrier) {
+    }
+
+    public void setJewelryBag(JewelryBag jewelryBag) {
+
+    }
 }

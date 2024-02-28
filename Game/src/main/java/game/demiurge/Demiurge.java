@@ -14,6 +14,7 @@ public class Demiurge implements Serializable{
     private Dungeon dungeon;
     private Home home;
     private Wizard wizard;
+    private static final long serialVersionUID = 5736888072394048044L;
 
     DungeonConfiguration dungeonConfiguration;
     DemiurgeHomeManager homeManager;

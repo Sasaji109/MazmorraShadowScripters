@@ -698,3 +698,5 @@ w
 G.idea/sonarlint/issuestore/3/0/300601afe9feaada8aabd77ea97eff2e56a0e2f9,3\1\31913d738646e55875761510c05f954140c63bd2
 w
 G.idea/sonarlint/issuestore/3/b/3ba730bf0f35d1b0e094349f222bad934c10850a,9\2\92b10262a403b620ec0af246c23f8e4aad5150ac
+\
+,CargaXML/src/main/java/load/module-info.java,d\e\deff97c26a5940e257907d4a554b9ea80616ad44

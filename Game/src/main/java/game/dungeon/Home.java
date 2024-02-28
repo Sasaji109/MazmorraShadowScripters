@@ -11,7 +11,7 @@ import game.util.ValueUnderMinException;
 
 public class Home extends Site {
     private Value comfort;
-    private final SingaStone singa;
+    private SingaStone singa;
 
     private Knowledge library;
 
@@ -67,5 +67,11 @@ public class Home extends Site {
     public String toString() { return "HOME " + comfort + "\n\t" + singa + "\n\t" + container + "\n\t" + library; }
 
 
+    public void setComfort(Value value) {
+        comfort = value;
+    }
 
+    public void setSinga(SingaStone singaStone) {
+        singa = singaStone;
+    }
 }

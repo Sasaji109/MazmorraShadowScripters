@@ -3,21 +3,21 @@ o	java:S120"ZRename this package name to match the regular expression '^[a-z_
 \
 java:S1659"FDeclare "necklaces" and all following declarations on a separate line.(ñ÷˜Å
 U
-java:S1161":Add the "@Override" annotation above this method signature(¤ªÿ¸ùÿÿÿÿ
+java:S1161K":Add the "@Override" annotation above this method signature(¤ªÿ¸ùÿÿÿÿ
 a
-java:S6201"FReplace this instanceof check and cast with 'instanceof Weapon weapon'(›Şóöşÿÿÿÿ
+java:S6201L"FReplace this instanceof check and cast with 'instanceof Weapon weapon'(›Şóöşÿÿÿÿ
 e
-java:S6201"JReplace this instanceof check and cast with 'instanceof Necklace necklace'(ß°šòüÿÿÿÿ
+java:S6201N"JReplace this instanceof check and cast with 'instanceof Necklace necklace'(ß°šòüÿÿÿÿ
 X
-java:S6201 "BReplace this instanceof check and cast with 'instanceof Ring ring'(›Û°„
+java:S6201P"BReplace this instanceof check and cast with 'instanceof Ring ring'(›Û°„
 P
-java:S1161(":Add the "@Override" annotation above this method signature(ôËè¶
-\
-java:S6201W"FReplace this instanceof check and cast with 'instanceof Weapon weapon'(õîœË
-X
-java:S6201_"BReplace this instanceof check and cast with 'instanceof Ring ring'(Ü²Ï
-m
-java:S3776h"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ìÈıÿÿÿÿ
-_
-java:S6201k"JReplace this instanceof check and cast with 'instanceof Necklace necklace'(¶õ¶"
->	java:S108u")Either remove or fill this block of code.(ìç©û
+java:S1161X":Add the "@Override" annotation above this method signature(ôËè¶
+]
+java:S6201‡"FReplace this instanceof check and cast with 'instanceof Weapon weapon'(õîœË
+Y
+java:S6201"BReplace this instanceof check and cast with 'instanceof Ring ring'(Ü²Ï
+n
+java:S3776˜"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ìÈıÿÿÿÿ
+`
+java:S6201›"JReplace this instanceof check and cast with 'instanceof Necklace necklace'(¶õ¶"
+?	java:S108¥")Either remove or fill this block of code.(ìç©û

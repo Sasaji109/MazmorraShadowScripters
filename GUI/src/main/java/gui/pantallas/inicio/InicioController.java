@@ -3,11 +3,10 @@ package gui.pantallas.inicio;
 import gui.pantallas.common.BasePantallaController;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-
+import java.io.File;
 import java.io.IOException;
 
 public class InicioController extends BasePantallaController {
@@ -20,33 +19,40 @@ public class InicioController extends BasePantallaController {
     @FXML
     private ImageView background;
 
+
     @FXML
-    private void seleccionarArchivoCargarPartida() throws IOException, ClassNotFoundException {
+    private void elegirArchivo() {
         FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Seleccionar archivo de partida");
-        fileChooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter("Archivos TXT", "*.txt"),
-                new FileChooser.ExtensionFilter("Archivos XML", "*.xml")
-        );
+        fileChooser.setTitle("Seleccionar Archivo");
+        FileChooser.ExtensionFilter xmlFilter = new FileChooser.ExtensionFilter("Archivos XML (*.xml)", "*.xml");
+        FileChooser.ExtensionFilter txtFilter = new FileChooser.ExtensionFilter("Archivos TXT (*.txt)", "*.txt");
+        fileChooser.getExtensionFilters().addAll(xmlFilter, txtFilter);
 
-        Stage stage = (Stage) logo.getScene().getWindow();
-        var selectedFile = fileChooser.showOpenDialog(stage);
-
+        File selectedFile = fileChooser.showOpenDialog(new Stage());
         if (selectedFile != null) {
-            if (selectedFile.getName().toLowerCase().endsWith(".txt")) {
-                getPrincipalController().cargarPartidaDesdeTXT();
-            } else if (selectedFile.getName().toLowerCase().endsWith(".xml")) {
-                getPrincipalController().cargarPartidaDesdeXML();
+            String filePath = selectedFile.getAbsolutePath();
+            if (filePath.endsWith(".xml")) {
+                getPrincipalController().cargarPartidaDesdeXML(filePath);
             } else {
-                mostrarError("Formato de archivo no admitido");
+                try {
+                    getPrincipalController().cargarPartidaDesdeTXT(filePath);
+                } catch (IOException | ClassNotFoundException ex) {
+                    sacarAlertError("Error al cargar el archivo");
+                }
             }
+        } else {
+            sacarAlertError("Ningún archivo fue seleccionado");
         }
     }
 
-    private void mostrarError(String mensaje) {
-        Alert alert = new Alert(Alert.AlertType.ERROR, mensaje, ButtonType.OK);
+    private void sacarAlertError(String mensaje) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Error");
+        alert.setHeaderText(null);
+        alert.setContentText(mensaje);
         alert.showAndWait();
     }
+
 
     //MÉTODOS PARA EJECUTAR CON BOTONES
     @FXML
@@ -54,10 +60,6 @@ public class InicioController extends BasePantallaController {
         getPrincipalController().partidaNuevaInicio();
     }
 
-    @FXML
-    private void ajustesInicio() {
-        getPrincipalController().ajustesInicio();
-    }
     @FXML
     private void salirInicio() {
         getPrincipalController().salirInicio();

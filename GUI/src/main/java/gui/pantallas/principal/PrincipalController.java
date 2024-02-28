@@ -1,14 +1,16 @@
 package gui.pantallas.principal;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import LoadTXT.LoadTXT;
-import game.character.Wizard;
+import LoadTXT.loadTXTImpl.LoadTXTImpl;
 import game.demiurge.Demiurge;
-import game.dungeon.Dungeon;
 import game.dungeon.Room;
 import gui.Constantes;
 import gui.pantallas.common.BasePantallaController;
 import gui.pantallas.common.Pantallas;
 import informes.InformesMazmorra;
+import informes.impl.InformesMazmorraImpl;
 import jakarta.enterprise.inject.Instance;
 import jakarta.inject.Inject;
 import javafx.application.Platform;
@@ -25,8 +27,11 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import lombok.extern.log4j.Log4j2;
 import saveTXT.SaveTXT;
+import saveTXT.saveTXTImpl.SaveTXTImpl;
 import saveXML.SaveXML;
+import saveXML.saveXMLImpl.saveXMLImp;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -73,6 +78,7 @@ public class PrincipalController {
 
     public void initialize() {
         menuPrincipal.setVisible(false);
+        demiurge = new Demiurge();
         cargarPantalla(Pantallas.INICIO);
     }
 
@@ -116,57 +122,61 @@ public class PrincipalController {
     }
 
     public void guardarYSalirXML() {
-        SaveXML saveXML = null;
-        saveXML.saveDemiurge(demiurge,"");
+        SaveXML saveXML = new saveXMLImp();
+        String downloadsFolder = System.getProperty("user.home") + "\\Downloads";
+        Path filePath = Paths.get(downloadsFolder, "mazmorraSave.txt");
+        saveXML.saveDemiurge(demiurge, String.valueOf(filePath));
         primaryStage.close();
     }
 
     public void guardarYSalirTXT() throws IOException {
-        SaveTXT saveTXT = null;
-        saveTXT.saveDemiurge(demiurge,"");
+        SaveTXT saveTXT = new SaveTXTImpl();
+        String downloadsFolder = System.getProperty("user.home") + "\\Downloads";
+        Path filePath = Paths.get(downloadsFolder, "mazmorraSave.txt");
+        saveTXT.saveDemiurge(demiurge, String.valueOf(filePath));
         primaryStage.close();
     }
 
     public void generarInformeHistorialAcciones() {
-        InformesMazmorra informesMazmorra = null;
-        List<String> acciones = null;
+        InformesMazmorra informesMazmorra = new InformesMazmorraImpl();
+        List<String> acciones = (List<String>) demiurge.getWizard().getWearables();
         informesMazmorra.HistorialAcciones(acciones);
     }
 
     public void generarInformeCeldasVisitadas() {
-        InformesMazmorra informesMazmorra = null;
-        List<Room> celdas = null;
+        InformesMazmorra informesMazmorra = new InformesMazmorraImpl();
+        List<Room> celdas = Collections.singletonList(demiurge.getDungeon().getRoom(1));
         informesMazmorra.CeldasVisitadas(celdas);
     }
 
     public void generarInformeHojaPersonaje() {
-        InformesMazmorra informesMazmorra = null;
+        InformesMazmorra informesMazmorra = new InformesMazmorraImpl();
         informesMazmorra.HojaPersonaje(demiurge.getWizard());
     }
 
     public void partidaNuevaInicio() {
-        demiurge.setDungeon(null);
-        demiurge.setDungeon(new Dungeon());
+        demiurge = new Demiurge();
         cargarPantalla(Pantallas.MENU_JUEGO);
         menuPrincipal.setVisible(true);
     }
 
-    public void cargarPartidaDesdeTXT() throws IOException, ClassNotFoundException {
-        LoadTXT loadTXT = null;
-        demiurge = loadTXT.loadDemiurge("");
+    public void cargarPartidaDesdeTXT(String filePath) throws IOException, ClassNotFoundException {
+        LoadTXT cargarTXT=new LoadTXTImpl();
+        demiurge = cargarTXT.loadDemiurge(filePath);
         cargarPantalla(Pantallas.MENU_JUEGO);
         menuPrincipal.setVisible(true);
     }
 
-    public void cargarPartidaDesdeXML() {
-        //LoadXml loadXML = null;
+    public void cargarPartidaDesdeXML(String filePath) {
+        //LoadXml cargarXML= new LoadXMLImpl();
         //demiurge = loadXML.load("");
-        cargarPantalla(Pantallas.MENU_JUEGO);
-        menuPrincipal.setVisible(true);
-    }
-
-    public void ajustesInicio() {
-
+        //cargarPantalla(Pantallas.MENU_JUEGO);
+        //menuPrincipal.setVisible(true);
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Mantenimiento");
+        alert.setHeaderText(null);
+        alert.setContentText("Lo sentimos, esta función está actualmente en mantenimiento. Por favor, inténtelo de nuevo más tarde.");
+        alert.showAndWait();
     }
 
     public void salirInicio() {

@@ -12,9 +12,57 @@ import game.util.ValueUnderMinException;
 public class Wearables extends Container{
 
     private int weapons, necklaces, rings;
-    private final int weaponsMAX;
-    private final int necklacesMAX;
-    private final int ringsMAX;
+    private int weaponsMAX;
+    private int necklacesMAX;
+    private int ringsMAX;
+
+    public int getWeapons() {
+        return weapons;
+    }
+
+    public int getNecklaces() {
+        return necklaces;
+    }
+
+    public int getRings() {
+        return rings;
+    }
+
+    public int getWeaponsMAX() {
+        return weaponsMAX;
+    }
+
+    public int getNecklacesMAX() {
+        return necklacesMAX;
+    }
+
+    public int getRingsMAX() {
+        return ringsMAX;
+    }
+
+    public void setWeaponsMAX(int weaponsMAX) {
+        this.weaponsMAX = weaponsMAX;
+    }
+
+    public void setNecklacesMAX(int necklacesMAX) {
+        this.necklacesMAX = necklacesMAX;
+    }
+
+    public void setRingsMAX(int ringsMAX) {
+        this.ringsMAX = ringsMAX;
+    }
+
+    public void setWeapons(int weapons) {
+        this.weapons = weapons;
+    }
+
+    public void setNecklaces(int necklaces) {
+        this.necklaces = necklaces;
+    }
+
+    public void setRings(int rings) {
+        this.rings = rings;
+    }
 
     public Wearables(int w, int n, int r) {
         super(Domain.NONE, w+n+r);

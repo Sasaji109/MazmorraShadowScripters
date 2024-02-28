@@ -9,7 +9,7 @@ import java.util.Iterator;
 /**
  * Basic aggregation of elements that is limited in capacity
  */
-public abstract class Knowledge  implements Serializable {
+public class Knowledge  implements Serializable {
 
     final ArrayList<Spell> spells;
 

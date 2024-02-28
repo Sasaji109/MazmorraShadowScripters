@@ -12,6 +12,10 @@ public class Dungeon  implements Serializable {
         rooms = new ArrayList<>();
     }
 
+    public ArrayList<Room> getRooms() {
+        return rooms;
+    }
+
     public void addRoom(Room room) { rooms.add(room); }
 
     public Room getRoom(int index) { return rooms.get(index); }

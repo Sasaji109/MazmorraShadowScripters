@@ -1,39 +1,19 @@
 
-z
-java:S1488¨"^Immediately return this expression instead of assigning it to the temporary variable "wizard".(Ö¸Ëóúÿÿÿÿ
+h	java:S112ì"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ó…”‰ß1
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÉêëÍ
 P
-java:S2755#"3Disable access to external entities in XML parsing.(²µŸš8´‹ÊÃØ1
+java:S2755%"3Disable access to external entities in XML parsing.(²µŸš8ùğš‰ß1
+\
+java:S1854‰">Remove this useless assignment to local variable "spellLevel".(»üÕ¢8Šˆ”‰ß1
 M
-java:S1854-"7Remove this useless assignment to local variable "day".(® §¦
->
-java:S1481-"(Remove this unused "day" local variable.(® §¦
-V	java:S125."<This block of commented-out lines of code should be removed.(ÓÚƒ²ùÿÿÿÿ
-W
-java:S1854P"ARemove this useless assignment to local variable "singaCapacity".(®«ïï
-U
-java:S1854ƒ">Remove this useless assignment to local variable "spellLevel".(»üÕ¢
-H
-java:S1481P"2Remove this unused "singaCapacity" local variable.(®«ïï
-F
-java:S1481ƒ"/Remove this unused "spellLevel" local variable.(»üÕ¢
-?	java:S131†""Add a default case to this switch.(¡õİæ8Ä‹ÊÃØ1
-i
-java:S3776¨"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(Æ‡Ú
-T
-java:S1854¹"=Remove this useless assignment to local variable "isVisited".(íÊÇ¼
-V
-java:S1854·":Remove this useless assignment to local variable "isExit".(„ñÅüıÿÿÿÿ
-G
-java:S1481·"+Remove this unused "isExit" local variable.(„ñÅüıÿÿÿÿ
-E
-java:S1481¹".Remove this unused "isVisited" local variable.(íÊÇ¼
-R	java:S125¾"<This block of commented-out lines of code should be removed.(ã÷„
-U
-java:S1854‚">Remove this useless assignment to local variable "spellLevel".(»üÕ¢
-F
-java:S1481‚"/Remove this unused "spellLevel" local variable.(»üÕ¢
-?	java:S131„""Add a default case to this switch.(¡õİæ8Ì‹ÊÃØ1
-P
-java:S1172¤"4Remove this unused method parameter "wizardElement".(ÖÆÀçøÿÿÿÿ
-R	java:S125«"<This block of commented-out lines of code should be removed.(«ø‚
+java:S1481‰"/Remove this unused "spellLevel" local variable.(»üÕ¢8ˆ”‰ß1
+?	java:S131Œ""Add a default case to this switch.(¡õİæ8ˆ”‰ß1
+p
+java:S3776¨"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(Æ‡Ú8‘ˆ”‰ß1
+\
+java:S1854†">Remove this useless assignment to local variable "spellLevel".(»üÕ¢8—ˆ”‰ß1
+M
+java:S1481†"/Remove this unused "spellLevel" local variable.(»üÕ¢8™ˆ”‰ß1
+?	java:S131ˆ""Add a default case to this switch.(¡õİæ8™ˆ”‰ß1
+u
+java:S3776¨"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ÖÆÀçøÿÿÿÿ8™ˆ”‰ß1

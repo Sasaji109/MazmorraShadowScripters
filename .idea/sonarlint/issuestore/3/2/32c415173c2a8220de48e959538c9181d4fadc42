@@ -1,10 +1,4 @@
 
-h
-java:S2259"EA "NullPointerException" could be thrown; "loadTXT" is nullable here.(θΝαΔωÿÿÿÿ8µΠα®ά1
-b
-java:S2259~"EA "NullPointerException" could be thrown; "saveTXT" is nullable here.(Οµ§8µΠα®ά1
-b
-java:S2259x"EA "NullPointerException" could be thrown; "saveXML" is nullable here.(Δ­•¬8³Πα®ά1
-¤
-java:S1186¨"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ςΡ¤ΐύÿÿÿÿ8¶Πα®ά1
-Y	java:S125Ά"<This block of commented-out lines of code should be removed.(Ω„°τ8ΤΠα®ά1
+R
+java:S1172ª"/Remove this unused method parameter "filePath".(ά™Τϊÿÿÿÿ8‚‹ί1
+Y	java:S125«"<This block of commented-out lines of code should be removed.(ΌΑª8‚‹ί1

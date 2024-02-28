@@ -52,7 +52,11 @@ public class Site  implements Serializable {
 
     //Container
     public Container getContainer() { return container;}
-    public void addItem(Item s) throws ContainerUnacceptedItemException, ContainerFullException { container.add(s); }
+    public void addItem(Item s) throws ContainerUnacceptedItemException, ContainerFullException {
+        if (!container.isFull()) {
+            container.add(s);
+        }
+    }
 
 
     //Doors

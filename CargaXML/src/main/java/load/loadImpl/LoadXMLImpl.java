@@ -1,12 +1,14 @@
 package load.loadImpl;
 
 import game.Domain;
+
 import game.character.Creature;
 import game.character.Wizard;
 import game.conditions.Condition;
 import game.conditions.KillAllCreaturesCondition;
 import game.conditions.VisitAllRoomsCondition;
 import game.demiurge.Demiurge;
+
 import game.dungeon.Dungeon;
 import game.dungeon.Home;
 import game.dungeon.Room;
@@ -43,7 +45,7 @@ public class LoadXMLImpl implements LoadXml {
 
             // Cargar datos generales de Demiurge
             int day = Integer.parseInt(demiurgeElement.getElementsByTagName("day").item(0).getTextContent());
-            //demiurge.setDay(day);
+            demiurge.setDay(day);
 
             // Cargar datos de Home
             Element homeElement = (Element) demiurgeElement.getElementsByTagName("home").item(0);
@@ -61,30 +63,34 @@ public class LoadXMLImpl implements LoadXml {
             demiurge.setWizard(wizard);
 
             // Cargar condiciones
+
             Element conditionsElement = (Element) demiurgeElement.getElementsByTagName("conditions").item(0);
-            List<Condition> conditions = loadConditions(conditionsElement, dungeon);
-            conditions.forEach(demiurge::addCondition);
+            List<Condition> conditions = null;
+            if (conditionsElement != null) {
+                conditions = loadConditions(conditionsElement, dungeon);
+                conditions.forEach(demiurge::addCondition);
+            }
+
 
             return demiurge;
 
         } catch (Exception e) {
             e.printStackTrace();
-            return null;
+            return new Demiurge();
         }
     }
 
     private Home loadHome(Element homeElement) {
         String description = homeElement.getElementsByTagName("description").item(0).getTextContent();
         int comfort = Integer.parseInt(homeElement.getElementsByTagName("comfort").item(0).getTextContent());
-        int singa = Integer.parseInt(homeElement.getElementsByTagName("singa").item(0).getTextContent());
         int singaCapacity = Integer.parseInt(homeElement.getElementsByTagName("singaCapacity").item(0).getTextContent());
         int singaMaxCapacity = Integer.parseInt(homeElement.getElementsByTagName("singaMaxCapacity").item(0).getTextContent());
         int chestValue = Integer.parseInt(homeElement.getElementsByTagName("chestValue").item(0).getTextContent());
 
         // Crear una instancia de Home con los datos cargados
-        Knowledge knowledge = null;
+        Knowledge knowledge = new Knowledge();
 
-        Home home = new Home(description, comfort, singa, singaMaxCapacity, new Chest(chestValue), knowledge  );
+        Home home = new Home(description, comfort, singaCapacity, singaMaxCapacity, new Chest(chestValue), knowledge);
 
         // Cargar items en el chest
         NodeList items = homeElement.getElementsByTagName("item");
@@ -98,7 +104,7 @@ public class LoadXMLImpl implements LoadXml {
                 Item item;
                 switch (itemType) {
                     case "weapon":
-                        item = new Weapon( itemValue);
+                        item = new Weapon(itemValue);
                         break;
                     case "necklace":
                         item = new Necklace(itemDomain, itemValue);
@@ -129,15 +135,15 @@ public class LoadXMLImpl implements LoadXml {
                 Element spellElement = (Element) spells.item(i);
                 Domain spellDomain = Domain.valueOf(spellElement.getElementsByTagName("element").item(0).getTextContent());
                 int spellLevel = Integer.parseInt(spellElement.getElementsByTagName("level").item(0).getTextContent());
-                Spell spell=null;
+                Spell spell = null;
 
-                switch (spellDomain.name()){
+                switch (spellDomain.name()) {
                     case "AirAttack":
                         spell = new AirAttack();
 
                         break;
                     case "DrainEnergy":
-                         spell = new DrainEnergy();
+                        spell = new DrainEnergy();
 
                         break;
                     case "ElectricAttack":
@@ -150,16 +156,10 @@ public class LoadXMLImpl implements LoadXml {
                         break;
 
 
-
-
                 }
-
                 home.getLibrary().add(spell);
-
-
             }
         }
-
 
 
         return home;
@@ -187,8 +187,8 @@ public class LoadXMLImpl implements LoadXml {
                 // Crear una instancia de Room con los datos cargados
                 //no sabemos si esto esta bien
                 Room room = new Room(roomId, description, new RoomSet(roomId));
-                //room.setExit(isExit);
-                //room.setVisited(isVisited);
+                room.setExit(isExit);
+                room.setVisited(isVisited);
 
                 // Cargar items en la room
                 NodeList items = roomElement.getElementsByTagName("item");
@@ -227,6 +227,8 @@ public class LoadXMLImpl implements LoadXml {
                 // Cargar datos de Creature en la room si existe
                 Element creatureElement = (Element) roomElement.getElementsByTagName("creature").item(0);
                 if (creatureElement != null) {
+
+
                     Creature creature = loadCreature(creatureElement);
                     room.setCreature(creature);
                 }
@@ -239,63 +241,59 @@ public class LoadXMLImpl implements LoadXml {
     }
 
     private Creature loadCreature(Element creatureElement) {
-        Domain creatureDomain = Domain.valueOf(creatureElement.getElementsByTagName("element").item(0).getTextContent());
-        String creatureName = creatureElement.getElementsByTagName("name").item(0).getTextContent();
-        int creatureLife = Integer.parseInt(creatureElement.getElementsByTagName("life").item(0).getTextContent());
-        int creatureAttack = Integer.parseInt(creatureElement.getElementsByTagName("attack").item(0).getTextContent());
+        NodeList elementNodes = creatureElement.getElementsByTagName("element");
+        if (elementNodes.getLength() > 0) {
+            Domain creatureDomain = Domain.valueOf(elementNodes.item(0).getTextContent());
+            String creatureName = creatureElement.getElementsByTagName("name").item(0).getTextContent();
+            int creatureLife = Integer.parseInt(creatureElement.getElementsByTagName("life").item(0).getTextContent());
+            int creatureAttack = Integer.parseInt(creatureElement.getElementsByTagName("attack").item(0).getTextContent());
 
-        Creature creature = new Creature(creatureName, creatureLife,creatureAttack,creatureDomain );
-
-
-        // Cargar spells en la memory de la creature
-        Element spellsElement = (Element) creatureElement.getElementsByTagName("spells").item(0);
-        NodeList spellNodes = spellsElement.getElementsByTagName("spell");
-
-        for (int i = 0; i < spellNodes.getLength(); i++) {
-            if (spellNodes.item(i).getNodeType() == org.w3c.dom.Node.ELEMENT_NODE) {
-                Element spellElement = (Element) spellNodes.item(i);
-                Domain spellDomain = Domain.valueOf(spellElement.getElementsByTagName("element").item(0).getTextContent());
-                int spellLevel = Integer.parseInt(spellElement.getElementsByTagName("level").item(0).getTextContent());
-                Spell spell =null;
-                switch (spellDomain.name()){
-                    case "AirAttack":
-                        spell = new AirAttack();
-
-                        break;
-                    case "DrainEnergy":
-                        spell = new DrainEnergy();
-
-                        break;
-                    case "ElectricAttack":
-                        spell = new ElectricAttack();
-
-                        break;
-                    case "FireAttack":
-
-                        spell = new FireAttack();
-                        break;
+            Creature creature = new Creature(creatureName, creatureLife, creatureAttack, creatureDomain);
 
 
+            // Cargar spells en la memory de la creature
+            Element spellsElement = (Element) creatureElement.getElementsByTagName("spells").item(0);
+            NodeList spellNodes = spellsElement.getElementsByTagName("spell");
+
+            for (int i = 0; i < spellNodes.getLength(); i++) {
+                if (spellNodes.item(i).getNodeType() == org.w3c.dom.Node.ELEMENT_NODE) {
+                    Element spellElement = (Element) spellNodes.item(i);
+                    Domain spellDomain = Domain.valueOf(spellElement.getElementsByTagName("element").item(0).getTextContent());
+                    int spellLevel = Integer.parseInt(spellElement.getElementsByTagName("level").item(0).getTextContent());
+                    Spell spell = null;
+                    switch (spellDomain.name()) {
+                        case "AirAttack":
+                            spell = new AirAttack();
+
+                            break;
+                        case "DrainEnergy":
+                            spell = new DrainEnergy();
+
+                            break;
+                        case "ElectricAttack":
+                            spell = new ElectricAttack();
+
+                            break;
+                        case "FireAttack":
+
+                            spell = new FireAttack();
+                            break;
 
 
+                    }
+
+                    creature.getMemory().add(spell);
                 }
-
-                creature.getMemory().add(spell);
             }
-        }
+            return creature;
 
-        return creature;
+        } else {
+            return null;
+        }
     }
 
 
-
     private Wizard loadWizard(Element wizardElement) {
-        Wearables wearables = new Wearables(1,1,1);
-        CrystalCarrier crystalCarrier = new CrystalCarrier(1);
-        JewelryBag jewelryBag = new JewelryBag(1);
-        Wizard wizard = new Wizard("2",1,1,1,1,wearables,crystalCarrier,jewelryBag);
-
-        /*
         String wizardName = wizardElement.getElementsByTagName("name").item(0).getTextContent();
         int currentLife = Integer.parseInt(wizardElement.getElementsByTagName("currentLife").item(0).getTextContent());
         int maxLife = Integer.parseInt(wizardElement.getElementsByTagName("maxLife").item(0).getTextContent());
@@ -309,8 +307,6 @@ public class LoadXMLImpl implements LoadXml {
         int maxNecklaces = Integer.parseInt(wereablesElement.getElementsByTagName("maxNecklaces").item(0).getTextContent());
         int maxRings = Integer.parseInt(wereablesElement.getElementsByTagName("maxRings").item(0).getTextContent());
 
-        ///JewelryBag jewelryBag=new JewelryBag(maxNecklaces+maxRings);
-        //CrystalCarrier crystalCarrier=new CrystalCarrier(0);
 
 
         Wearables wearables = new Wearables(maxWeapons, maxNecklaces, maxRings);
@@ -352,7 +348,7 @@ public class LoadXMLImpl implements LoadXml {
         // Cargar datos del crystalCarrier
         Element crystalCarrierElement = (Element) wizardElement.getElementsByTagName("crystalCarrier").item(0);
         int crystalCarrierCapacity = Integer.parseInt(crystalCarrierElement.getElementsByTagName("capacity").item(0).getTextContent());
-        CrystalCarrier crystalCarrier=new CrystalCarrier(crystalCarrierCapacity);
+        CrystalCarrier crystalCarrier = new CrystalCarrier(crystalCarrierCapacity);
 
         // Cargar crystals en crystalCarrier
         NodeList crystals = crystalCarrierElement.getElementsByTagName("crystal");
@@ -373,8 +369,8 @@ public class LoadXMLImpl implements LoadXml {
         // Cargar datos del jeweleryBag
         Element jeweleryBagElement = (Element) wizardElement.getElementsByTagName("jeweleryBag").item(0);
         int jeweleryBagCapacity = Integer.parseInt(jeweleryBagElement.getElementsByTagName("capacity").item(0).getTextContent());
-        JewelryBag jewelryBag=new JewelryBag(jeweleryBagCapacity);
-        Wizard wizard = new Wizard(wizardName,currentLife, maxLife,currentEnergy, maxEnergy,wearables,crystalCarrier,jewelryBag);
+        JewelryBag jewelryBag = new JewelryBag(jeweleryBagCapacity);
+        Wizard wizard = new Wizard(wizardName, currentLife, maxLife, currentEnergy, maxEnergy, wearables, crystalCarrier, jewelryBag);
         wizard.setLife(currentLife);
         wizard.setEnergy(currentEnergy);
         // Cargar items en jeweleryBag
@@ -409,7 +405,7 @@ public class LoadXMLImpl implements LoadXml {
                     e.printStackTrace();
                 }
             }
-        } */
+        }
 
         return wizard;
     }

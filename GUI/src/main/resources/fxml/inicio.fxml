@@ -12,8 +12,7 @@
       <ImageView fx:id="background" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
 
       <Button id="botonPartidaNueva" layoutX="93.0" layoutY="188.0" mnemonicParsing="false" onAction="#partidaNuevaInicio" prefHeight="25.0" prefWidth="99.0" text="Partida Nueva" />
-      <Button id="botonCargarPartida" layoutX="93.0" layoutY="222.0" mnemonicParsing="false" onAction="#seleccionarArchivoCargarPartida" prefHeight="25.0" prefWidth="99.0" text="Cargar Partida" />
-      <Button id="botonAjustes" layoutX="93.0" layoutY="318.0" mnemonicParsing="false" onAction="#ajustesInicio" prefHeight="25.0" prefWidth="99.0" text="Ajustes" />
+      <Button id="botonCargarPartida" layoutX="93.0" layoutY="222.0" mnemonicParsing="false" onAction="#elegirArchivo" prefHeight="25.0" prefWidth="99.0" text="Cargar Partida" />
       <Button id="botonSalir" layoutX="93.0" layoutY="349.0" mnemonicParsing="false" onAction="#salirInicio" prefHeight="25.0" prefWidth="99.0" text="Salir" />
 
       <Separator layoutX="56.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="20.0" />
